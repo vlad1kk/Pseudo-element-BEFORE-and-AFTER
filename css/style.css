@@ -38,12 +38,12 @@ input, button, textarea {
   font-family: inherit;
 }
 
-input::-ms-clear {
-  display: none;
-}
-
 button {
   cursor: pointer;
+}
+
+input::-ms-clear {
+  display: none;
 }
 
 button::-moz-focus-inner {
@@ -103,6 +103,9 @@ body {
   display: inline-block;
   margin-right: 10px;
 }
+.list li:hover::before {
+  background-color: yellow;
+}
 .list li::after {
-  content: "»";
+  content: "";
 }
